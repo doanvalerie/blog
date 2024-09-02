@@ -2,6 +2,7 @@
   "name": "culinary-chronicles",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,12 +10,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "mongoose": "^8.6.0",
     "next": "14.2.7",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sass": "^1.77.8"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^20.16.2",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
