@@ -1,0 +1,14 @@
+.container {
+    /* display */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* box model */
+    box-shadow: var(--shadow-md);
+    height: var(--navbar-height);
+    padding: var(--sm-spacer) var(--base-spacer);
+
+    /* background */
+    background-color: var(--stone-bg);
+}

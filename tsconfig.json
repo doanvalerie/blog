@@ -19,6 +19,8 @@
     ],
     "paths": {
       "@actions/*": ["./src/app/(api)/_actions/*"],
+      "@components/*": ["./src/app/(pages)/_components/*"],
+      "@data/*": ["./src/app/(pages)/_data/*"],
       "@globals/*": ["./src/app/(pages)/_globals/*"],
       "@models/*": ["./src/app/(api)/_models/*"],
       "@utils/*": ["./src/app/(api)/_utils/*"]

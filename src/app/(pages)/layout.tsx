@@ -1,3 +1,5 @@
+import '@globals/styles/styles.scss';
+
 import fonts from '@globals/fonts';
 import metadata from '@globals/metadata.json';
 

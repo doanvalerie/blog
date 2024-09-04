@@ -1,0 +1,28 @@
+@use "media";
+
+.container {
+    /* display */
+    display: flex;
+    gap: var(--base-spacer);
+
+    /* typography */
+    font-weight: var(--semibold);
+
+    .active_slug {
+        /* box model */
+        border-bottom: var(--border-underline) solid var(--primary-color);
+
+        /* typography */
+        font-weight: var(--bold);
+    }
+
+    .link {
+        /* typography */
+        text-decoration: none;
+    }
+
+    @include media.tablet {
+        /* display */
+        display: none;
+    }
+}
