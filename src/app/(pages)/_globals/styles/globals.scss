@@ -9,6 +9,17 @@
     color: var(--text-dark);
 }
 
+body {
+    /* display and visibility */
+    display: flex;
+
+    /* position and layout */
+    flex-direction: column;
+
+    /* box model */
+    height: 100vh;
+}
+
 button {
     /* box model */
     border: none;
