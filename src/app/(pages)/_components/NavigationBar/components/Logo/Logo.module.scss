@@ -1,6 +1,8 @@
 .container {
-    /* display */
+    /* display and visibility */
     display: flex;
+
+    /* position and layout */
     align-items: center;
     gap: var(--xs-spacer);
 }

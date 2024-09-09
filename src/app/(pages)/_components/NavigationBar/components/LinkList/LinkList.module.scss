@@ -1,8 +1,10 @@
 @use "media";
 
 .container {
-    /* display */
+    /* display and visibility */
     display: flex;
+
+    /* position and layout */
     gap: var(--base-spacer);
 
     /* typography */
@@ -22,7 +24,7 @@
     }
 
     @include media.tablet {
-        /* display */
+        /* display and visibility */
         display: none;
     }
 }
