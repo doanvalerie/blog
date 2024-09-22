@@ -5,7 +5,7 @@
     display: grid;
 
     /* position and layout */
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, min-content);
     row-gap: var(--sm-spacer);
     column-gap: var(--med-spacer);
 
@@ -24,6 +24,7 @@
 
         /* typography */
         font-weight: var(--semibold);
+        white-space: nowrap;
 
         .icon {
             /* svg */
