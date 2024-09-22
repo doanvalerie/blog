@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import TextButtonNavigator from '@components/TextButtonNavigator/TextButtonNavigator';
 
 import styles from './AuthButtons.module.scss';
 
@@ -12,17 +12,17 @@ export default function AuthButtons() {
 }
 
 function SignInButton() {
-  return (
-    <Link href="/auth/sign-in">
-      <button>Sign In</button>
-    </Link>
-  );
+  return <TextButtonNavigator slug="/auth/sign-in" text="Log In" />;
 }
 
 function SignUpButton() {
   return (
-    <Link href="/auth/sign-up">
-      <button className={styles.sign_up}>Sign Up</button>
-    </Link>
+    <TextButtonNavigator
+      backgroundColor="--primary-color"
+      color="--text-light"
+      placeShadow={true}
+      slug="/auth/sign-up"
+      text="Sign Up"
+    />
   );
 }

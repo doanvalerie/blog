@@ -1,0 +1,15 @@
+.container {
+    /* box model */
+    border: var(--border-button);
+    border-radius: var(--rounded-sm);
+    padding: var(--xs-spacer) var(--sm-spacer);
+
+    /* typography */
+    font-weight: var(--semibold);
+
+    /* pseudo-classes & pseudo-elements */
+    &:hover {
+        /* background */
+        cursor: pointer;
+    }
+}

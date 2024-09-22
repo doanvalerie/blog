@@ -4,29 +4,5 @@
 
     /* position and layout */
     align-items: center;
-    gap: var(--base-spacer);
-
-    button {
-        /* typography */
-        font-weight: var(--semibold);
-
-        /* pseudo-classes & pseudo-elements */
-        &:hover {
-            /* background */
-            cursor: pointer;
-        }
-    }
-
-    .sign_up {
-        /* box model */
-        box-shadow: var(--shadow-sm);
-        border-radius: var(--rounded-sm);
-        padding: var(--xs-spacer) var(--sm-spacer);
-
-        /* background */
-        background-color: var(--primary-color);
-
-        /* typography */
-        color: var(--text-light);
-    }
+    gap: var(--xs-spacer);
 }
