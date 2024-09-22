@@ -1,0 +1,25 @@
+:root {
+    /* typography */
+    --single-line-typing-animation: typing 3.5s steps(35, end), blink-caret 0.75s infinite;
+
+    // typing effect
+    @keyframes typing {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 100%;
+        }
+    }
+
+    // typewriter caret effect
+    @keyframes blink-caret {
+        from,
+        to {
+            border-color: transparent;
+        }
+        50% {
+            border-color: var(--primary-color);
+        }
+    }
+}

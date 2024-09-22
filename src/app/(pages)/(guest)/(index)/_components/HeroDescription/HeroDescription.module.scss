@@ -1,0 +1,47 @@
+@use "media";
+
+.container {
+    /* display and visibility */
+    display: flex;
+
+    /* position and layout */
+    flex-direction: column;
+    gap: var(--xs-spacer);
+
+    .tagline {
+        /* box model */
+        width: fit-content;
+
+        h1 {
+            // TO-DO: Make reusable component for animated text
+
+            /* clipping */
+            overflow: hidden; // ensures content is not revealed until the animation
+
+            /* animation */
+            animation: var(--single-line-typing-animation);
+
+            /* box model */
+            border-right: var(--typewriter-caret);
+
+            /* typography */
+            white-space: nowrap; // keeps content on a single line
+
+            @include media.sm-phone {
+                /* animation */
+                animation: none;
+
+                /* box model */
+                border-right: 0;
+
+                /* typography */
+                white-space: normal;
+            }
+        }
+    }
+
+    p {
+        /* typography */
+        font-weight: var(--med-bold);
+    }
+}

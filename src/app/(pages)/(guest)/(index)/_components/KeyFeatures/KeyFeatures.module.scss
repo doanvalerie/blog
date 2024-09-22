@@ -1,0 +1,34 @@
+@use "media";
+
+.container {
+    /* display and visibility */
+    display: grid;
+
+    /* position and layout */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: var(--sm-spacer);
+    column-gap: var(--med-spacer);
+
+    @include media.sm-phone {
+        /* position and layout */
+        grid-template-columns: auto;
+    }
+
+    .bullet {
+        /* display and visibility */
+        display: flex;
+
+        /* position and layout */
+        align-items: center;
+        gap: var(--xs-spacer);
+
+        /* typography */
+        font-weight: var(--semibold);
+
+        .icon {
+            /* svg */
+            stroke: var(--primary-color);
+            fill: var(--primary-color);
+        }
+    }
+}

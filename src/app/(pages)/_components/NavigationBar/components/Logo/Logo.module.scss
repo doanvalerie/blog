@@ -5,4 +5,8 @@
     /* position and layout */
     align-items: center;
     gap: var(--xs-spacer);
+
+    h2 {
+        font-family: var(--font-assistant);
+    }
 }
